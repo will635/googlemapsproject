@@ -1,0 +1,73 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-style: italic;
+    color: black;
+}
+
+#map {
+    height: 700px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.custom-map-control-button {
+    appearance: button;
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin: 10px;
+    padding: 0px 0.5em;
+    height: 40px;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+    display:none;
+}
+
+
+.custom-map-control-button:hover {
+    background: #ebebeb;
+}
+
+#dropdown {
+    margin: 10px;
+    width: 100px;
+}
+
+#driveBtn {
+    width: 175px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+input {
+  border-radius: 5px;
+  cursor: pointer;
+}
+#busBtn {
+    height:20px;
+    width: 150px;
+}
+
+#amount {
+  margin-left: 8px;
+  cursor: text;
+}
+
+.loading {
+    background-color: #cccccc;
+    border-radius: 5px 5px 5px;
+    cursor: default;
+}
+
+
+#bus, #drive {
+    display: none;
+    margin-left: 5px;
+    width: 80px;
+    cursor: pointer;
+}

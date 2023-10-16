@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Maps Project</title>
+        <!--Meta Tags-->
+        <meta name="keywords" content="maps poject, google maps API, maps api">
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#bbbbbb">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A google maps PWA to find the best rated activities near you">
+        <!--Links-->
+        <link rel="shortcut Icon" type="image/x-icon" href="icon-512x512.png">
+        <link rel="apple-touch-icon" href="icon-192x192.png">
+        <script>
+            function myFunc() {}
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=&callback=myFunc&libraries=places"></script>
+        <!--Link external files JS, CSS, Manifest-->
+        <link rel="stylesheet" href="style.css">
+        <script  type="text/javascript" src="script.js"></script>
+        <link rel="manifest" href="/manifest.json">  
+    
+    </head>
+    <body>
+        <div id="submit"></div>
+        <div id="map" ref="map"></div>
+       <form>
+            <select id="dropdown">
+                <option value="1" selected="selected">Restaurants</option>
+                <option value="2">Parks</option>
+            </select>
+            <input type="button" onclick="changeSearch()" value="Change Search Type">
+        </form>
+        <form>
+            <input id="amount" type="number" value="3" oninput="initializeMap()">
+        </form>
+        <button onclick="driveRouteBus()" id="bus">Bus</button>
+        <button onclick="driveRoute()" id="drive">Drive</button>
+        <div id="sidebar"></div>
+        <div id="control"></div>
+
+    </body>
+</html>
